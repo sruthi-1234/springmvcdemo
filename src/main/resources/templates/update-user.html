@@ -1,0 +1,10 @@
+<form action="#" th:action="@{/updateuser/{id}(id=${user.id})}"
+      th:object="${user}" method="post" xmlns:th="http://www.w3.org/1999/xhtml">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+
+    <label for="email">Email</label>
+    <input type="text" th:field="*{email}" id="email" placeholder="Email">
+
+    <input type="submit" value="updateuser" />
+</form>
